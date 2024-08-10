@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: pink;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    align-items: stretch; /* Ensures sections stretch to the same height */
+    justify-content: space-between;
+    height: 300px; /* Adjust height as needed */
+    gap: 10px; /* Space between the sections */
+}
+
+.left-box, .right-box {
+    background-color: blue; /* Background color */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Optional: Color for text */
+    margin: 0 5px; /* Adjust spacing between the sections */
+}
+
+.center-text {
+    flex: 2;
+    text-align: center;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Optional: Color for text */
+    margin: 0 5px; /* Adjust spacing between the sections */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
